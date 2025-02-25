@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(Resources/stars.png);
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  opacity: 90%;
+}
+.solarsystem {
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.solarsystem .sun {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit 70s infinite;
+}
+.solarsystem .orbit:nth-child(2) {
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px dotted whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit 3s linear infinite;
+}
+.solarsystem .orbit:nth-child(2) .planet {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 0%;
+  position: absolute;
+  transform: translateX(-50%);
+  animation: self-rotate 3s linear infinite;
+}
+.solarsystem .orbit:nth-child(3) {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px dotted whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit 3.5s linear infinite;
+}
+.solarsystem .orbit:nth-child(3) .planet {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 0%;
+  position: absolute;
+  transform: translateX(-50%);
+  animation: self-rotate 4s linear infinite;
+}
+.solarsystem .orbit:nth-child(4) {
+  position: absolute;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px dotted whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit 4s linear infinite;
+}
+.solarsystem .orbit:nth-child(4) .planet {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 0%;
+  position: absolute;
+  transform: translateX(-50%);
+  animation: self-rotate 5s linear infinite;
+}
+.solarsystem .orbit:nth-child(5) {
+  position: absolute;
+  display: flex;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px dotted whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit 4.5s linear infinite;
+}
+.solarsystem .orbit:nth-child(5) .planet {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 0%;
+  position: absolute;
+  transform: translateX(-50%);
+  animation: self-rotate 4s linear infinite;
+}
+.solarsystem .orbit:nth-child(6) {
+  position: absolute;
+  display: flex;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 1px dotted whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit 5s linear infinite;
+}
+.solarsystem .orbit:nth-child(6) .planet {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 0%;
+  position: absolute;
+  transform: translateX(-50%);
+  animation: self-rotate 6s linear infinite;
+}
+.solarsystem .orbit:nth-child(7) {
+  position: absolute;
+  display: flex;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  border: 1px dotted whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit 6s linear infinite;
+}
+.solarsystem .orbit:nth-child(7) .planet {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 0%;
+  position: absolute;
+  transform: translateX(-50%);
+  animation: self-rotate 8s linear infinite;
+}
+@keyframes orbit {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes self-rotate {
+  from {
+    tranform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
